@@ -1,4 +1,4 @@
-package com.usst.springbootitutor;
+package pojo;
 
 public class Login {
     private String userPhone;

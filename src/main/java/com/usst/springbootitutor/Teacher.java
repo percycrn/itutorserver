@@ -1,20 +1,23 @@
 package com.usst.springbootitutor;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class Teacher {
     @Id
+    @GeneratedValue
     private int tecId;
     private String username;
     private String password;
     private String name;
-    private String phoneNumber;
+    private String telenumber;
     private int sex;
     private String subject; // 科目（单选）
     private int tecGrade;
     private String payment; // 所有课时费
+    private String tecUrl; // 头像url
 
     public Teacher() {
     }
@@ -51,12 +54,12 @@ public class Teacher {
         this.name = name;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getTelenumber() {
+        return telenumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setTelenumber(String telenumber) {
+        this.telenumber = telenumber;
     }
 
     public int getSex() {
@@ -89,5 +92,13 @@ public class Teacher {
 
     public void setPayment(String payment) {
         this.payment = payment;
+    }
+
+    public String getTecUrl() {
+        return tecUrl;
+    }
+
+    public void setTecUrl(String tecUrl) {
+        this.tecUrl = tecUrl;
     }
 }

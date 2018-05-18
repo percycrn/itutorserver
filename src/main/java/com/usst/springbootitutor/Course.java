@@ -1,6 +1,11 @@
-package pojo;
+package com.usst.springbootitutor;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Course {
+    @Id
     private int courseId;
     private int stuId;
     private int tecId;

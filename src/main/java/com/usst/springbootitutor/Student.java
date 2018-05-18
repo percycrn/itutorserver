@@ -1,31 +1,34 @@
 package com.usst.springbootitutor;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class Student {
     @Id
-    private int stu_id;
+    @GeneratedValue
+    private int stuId;
     private String username;
     private String password;
     private String name;
     private int sex; // 1是女生 2是男生
     private int age;
-    private int stu_grade; // 一年级为1，逐级递增，高三为12
+    private int stuGrade; // 一年级为1，逐级递增，高三为12
     private String telenumber;
-    private String pay_password;
+    private String payPassword;
     private int balances; // 余额数目
+    private String stuUrl; // 学生头像url
 
     public Student() {
     }
 
-    public int getStu_id() {
-        return stu_id;
+    public int getStuId() {
+        return stuId;
     }
 
-    public void setStu_id(int stu_id) {
-        this.stu_id = stu_id;
+    public void setStuId(int stuId) {
+        this.stuId = stuId;
     }
 
     public String getUsername() {
@@ -68,12 +71,12 @@ public class Student {
         this.age = age;
     }
 
-    public int getStu_grade() {
-        return stu_grade;
+    public int getStuGrade() {
+        return stuGrade;
     }
 
-    public void setStu_grade(int stu_grade) {
-        this.stu_grade = stu_grade;
+    public void setStuGrade(int stuGrade) {
+        this.stuGrade = stuGrade;
     }
 
     public String getTelenumber() {
@@ -84,12 +87,12 @@ public class Student {
         this.telenumber = telenumber;
     }
 
-    public String getPay_password() {
-        return pay_password;
+    public String getPayPassword() {
+        return payPassword;
     }
 
-    public void setPay_password(String pay_password) {
-        this.pay_password = pay_password;
+    public void setPayPassword(String payPassword) {
+        this.payPassword = payPassword;
     }
 
     public int getBalances() {
@@ -103,16 +106,24 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "stu_id=" + stu_id +
+                "stuId=" + stuId +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", name='" + name + '\'' +
                 ", sex=" + sex +
                 ", age=" + age +
-                ", stu_grade=" + stu_grade +
+                ", stuGrade=" + stuGrade +
                 ", telenumber='" + telenumber + '\'' +
-                ", pay_password='" + pay_password + '\'' +
+                ", payPassword='" + payPassword + '\'' +
                 ", balances=" + balances +
                 '}';
+    }
+
+    public String getStuUrl() {
+        return stuUrl;
+    }
+
+    public void setStuUrl(String stuUrl) {
+        this.stuUrl = stuUrl;
     }
 }
