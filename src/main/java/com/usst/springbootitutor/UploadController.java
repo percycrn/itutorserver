@@ -66,7 +66,7 @@ public class UploadController {
     }
 
     @CrossOrigin
-    @RequestMapping(value = "/uploadImage", produces = "application/json; charset=utf-8", method = {RequestMethod.POST})
+    @RequestMapping(value = "common/upload", produces = "application/json; charset=utf-8", method = {RequestMethod.POST})
     public Url handleFileUpload(@RequestParam("file") MultipartFile file, @RequestParam("telenumber") String telenumber,
                                 @RequestParam("identify") int identify) {
         String url;

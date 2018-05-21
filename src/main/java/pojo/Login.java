@@ -1,34 +1,34 @@
 package pojo;
 
 public class Login {
-    private String userPhone;
-    private String userPassword;
-    private int userIdentify; // 1是学生 2是老师
+    private String telenumber;
+    private String password;
+    private int identify; // 1是学生 2是老师
 
     public Login() {
     }
 
-    public String getUserPhone() {
-        return userPhone;
+    public String getTelenumber() {
+        return telenumber;
     }
 
-    public void setUserPhone(String userPhone) {
-        this.userPhone = userPhone;
+    public void setTelenumber(String telenumber) {
+        this.telenumber = telenumber;
     }
 
-    public String getUserPassword() {
-        return userPassword;
+    public String getPassword() {
+        return password;
     }
 
-    public void setUserPassword(String userPassword) {
-        this.userPassword = userPassword;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public int getUserIdentify() {
-        return userIdentify;
+    public int getIdentify() {
+        return identify;
     }
 
-    public void setUserIdentify(int userIdentify) {
-        this.userIdentify = userIdentify;
+    public void setIdentify(int identify) {
+        this.identify = identify;
     }
 }

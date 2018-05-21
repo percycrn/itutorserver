@@ -13,6 +13,7 @@ public class Teacher {
     private String password;
     private String name;
     private String telenumber;
+    private int age;
     private int sex;
     private String subject; // 科目（单选）
     private int tecGrade;
@@ -100,5 +101,29 @@ public class Teacher {
 
     public void setTecUrl(String tecUrl) {
         this.tecUrl = tecUrl;
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "tecId=" + tecId +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", telenumber='" + telenumber + '\'' +
+                ", sex=" + sex +
+                ", subject='" + subject + '\'' +
+                ", tecGrade=" + tecGrade +
+                ", payment='" + payment + '\'' +
+                ", tecUrl='" + tecUrl + '\'' +
+                '}';
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
