@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ericcrn</groupId>
-    <artifactId>girl</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>itutor</artifactId>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>girl</name>

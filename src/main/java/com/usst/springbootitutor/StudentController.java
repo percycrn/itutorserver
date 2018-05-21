@@ -94,6 +94,9 @@ public class StudentController {
     @CrossOrigin
     @PostMapping(value = "getMyClassList")
     public List<Class> getMyClassList(@RequestBody Class aClass) {
+        if (aClass.getTecTelenumber() == null) {
+            return null;
+        }
         return classRepository.findByStuTelenumber(aClass.getStuTelenumber());
     }
 

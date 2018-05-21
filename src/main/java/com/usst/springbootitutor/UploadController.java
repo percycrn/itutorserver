@@ -89,7 +89,7 @@ public class UploadController {
                 out.write(file.getBytes());
                 out.flush();
                 out.close();
-                url = upLoad(uploadFile.getAbsolutePath(), telenumber) + "." + args[1];
+                url = upLoad(uploadFile.getAbsolutePath(), telenumber);
                 url1.setUrl(url);
             } catch (IOException e) {
                 e.printStackTrace();
